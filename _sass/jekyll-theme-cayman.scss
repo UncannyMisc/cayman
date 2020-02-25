@@ -109,7 +109,7 @@ a {
   color: $header-heading-color;
   text-align: center;
   background-image: url(../images/bannermedium.png);
-  width: 1536px;
+  width: auto;
   height: 256px;
 
   @include large {
