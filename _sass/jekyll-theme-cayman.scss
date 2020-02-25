@@ -108,7 +108,7 @@ a {
 .page-header {
   color: $header-heading-color;
   text-align: center;
-  background-image: url(../images/banner.png);
+  background-image: url(../images/bannermedium.png) no-repeat;
 
   @include large {
     padding: 5rem 6rem;
