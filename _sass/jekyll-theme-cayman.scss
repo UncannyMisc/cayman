@@ -109,7 +109,8 @@ a {
   color: $header-heading-color;
   text-align: center;
   background-image: url(../images/bannermedium.png);
-  vertical-align: middle;
+  width: 1536px;
+  height: 256px;
 
   @include large {
     padding: 5rem 6rem;
