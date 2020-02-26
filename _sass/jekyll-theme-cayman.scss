@@ -109,19 +109,27 @@ a {
   color: $header-heading-color;
   text-align: center;
   background-image: url(../images/bannermedium.png);
-  width: auto;
-  height: 256px;
+  background-size: cover;
 
   @include large {
-    padding: 5rem 6rem;
+    padding-top: 3rem;
+    padding-right: 4rem;
+    /* padding-bottom: 3rem; */
+    padding-left: 4rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding-top: 3rem;
+    padding-right: 4rem;
+    /* padding-bottom: 3rem; */
+    padding-left: 4rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding-top: 3rem;
+    padding-right: 4rem;
+    /* padding-bottom: 3rem; */
+    padding-left: 4rem;
   }
 }
 
@@ -164,7 +172,7 @@ a {
 nav {
   width: 230px;
   position: fixed;
-  top: 355px;
+  top: 18rem;
   left:50%;
   margin-left:-620px;
   text-align: right;
@@ -439,16 +447,15 @@ nav {
 /* navigation */
 
 .nav-bar {
-  background: #222;
+  background: linear-gradient(0deg, black, transparent);
   padding: 15px;
-  margin: 0 -35px 20px;
   position: relative;
+  margin: 0rem -8rem;
 }
 
 .nav-bar .inner {
   overflow: hidden;
   /* margin-left: 12rem; */
-  max-width: 64rem;
   padding: 0rem 4rem;
   margin: 0 auto;
 }
