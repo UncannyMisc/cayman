@@ -120,16 +120,16 @@ a {
 
   @include medium {
     padding-top: 3rem;
-    padding-right: 4rem;
+    padding-right: 0rem;
     /* padding-bottom: 3rem; */
-    padding-left: 4rem;
+    padding-left: 0rem;
   }
 
   @include small {
     padding-top: 3rem;
-    padding-right: 4rem;
+    padding-right: 0rem;
     /* padding-bottom: 3rem; */
-    padding-left: 4rem;
+    padding-left: 0rem;
   }
 }
 
@@ -388,7 +388,7 @@ a {
 }
 
 
-@media print, screen and (max-width: 84rem) {
+@media print, screen and (max-width: 74rem) {
   nav{
     display: none;
   }
@@ -465,8 +465,12 @@ nav {
 .nav-bar .inner {
   overflow: hidden;
   /* margin-left: 12rem; */
-  padding: 0rem 4rem;
+  padding: 0rem 0rem;
   margin: 0 auto;
+  width: max-content;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: thin;
 }
 
 .nav-bar .watch-fork iframe {
@@ -530,8 +534,11 @@ nav {
 
 .nav-bar a.link {
   /*background: transparent url(../images/code.png) no-repeat 0 2px;*/
+  padding-right: 35px;
   padding-left: 35px;
-  margin-top: 8px;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width: thin;
   display: block;
   float: left;
   text-indent: 0;
