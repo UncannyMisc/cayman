@@ -393,6 +393,11 @@ a {
     display: none;
   }
 }
+@media print, screen and (max-width: 21rem) {
+	.nav-bar a.link {
+	  float: none;
+	}
+}
 
 /*page navigation*/
 
