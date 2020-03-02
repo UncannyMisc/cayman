@@ -33,15 +33,19 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">
 	  {% if page.is_main %}
-	  {{ site.title | default: site.github.repository_name }}
+		{{ site.name | default: site.title | default: site.github.repository_name }}
 	  {% else %}
-	  {{ page.title | default: site.title | default: site.github.repository_name }}
+		{{ page.title | default: site.title | default: site.github.repository_name }}
 	  {% endif %}</h1>
       <h2 class="project-tagline">
-	  {% if page.title and !page.is_main %}
-	  {{ site.title | page.description | default: site.description | default: site.github.project_tagline }}
+	  {% if page.is_main %}
+		{{ page.description | default: site.description | default: site.github.project_tagline }}
 	  {% else %}
-	  {{ page.description | default: site.description | default: site.github.project_tagline }}
+		{% if page.title %}
+			{{ site.title | page.description | default: site.description | default: site.github.project_tagline }}
+		{% else %}
+			{{ page.description | default: site.description | default: site.github.project_tagline }}
+		{% endif %}
 	  {% endif %}</h2>
 		<div class="site-nav">
 			<div class="inner">
