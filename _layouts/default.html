@@ -22,7 +22,10 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+  
+    {% if page.is_guide %}
 	<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    {% endif %}
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -30,18 +33,15 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
 		<div class="nav-bar">
 			<div class="inner">
-			  <a href="{{ site.github.repository_url }}" class="link"><span>Home</span></a>
+			  <a href="https://uncannymisc.github.io" class="link"><span>Home</span></a>
 			  <a href="{{ site.github.repository_url }}" class="link"><span>About</span></a>
 			  <a href="{{ site.github.repository_url }}" class="link"><span>Portfolio</span></a>
+			  <a href="https://uncannymisc.github.io/articles/" class="link"><span>Articles</span></a>
+			  <a href="https://uncannymisc.github.io/tutorials/" class="link"><span>Tutorials</span></a>
+			  <a href="https://twitter.com/UncannyMotif" class="link"><span>Twitter</span></a>
+			  <a href="{{ site.github.repository_url }}" class="link"><span>Contact</span></a>
 			</div>
 			<span class="blc"></span><span class="trc"></span>
 		</div>
