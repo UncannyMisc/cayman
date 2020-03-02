@@ -113,9 +113,9 @@ a {
 
   @include large {
     padding-top: 3rem;
-    padding-right: 4rem;
+    padding-right: 0rem;
     /* padding-bottom: 3rem; */
-    padding-left: 4rem;
+    padding-left: 0rem;
   }
 
   @include medium {
@@ -406,7 +406,7 @@ nav {
   position: fixed;
   top: 18rem;
   left:50%;
-  margin-left:-620px;
+  margin-left: -600px;
   text-align: right;
 
   ul {
@@ -464,7 +464,7 @@ nav {
   background: linear-gradient(0deg, black, transparent);
   padding: 15px;
   position: relative;
-  margin: 0rem -4rem;
+  /*margin: 0rem -4rem;*/
 }
 
 .nav-bar .inner {
@@ -472,7 +472,8 @@ nav {
   /* margin-left: 12rem; */
   padding: 0rem 0rem;
   margin: 0 auto;
-  width: max-content;
+  /*width: max-content;*/
+  max-width: fit-content;
   border-left-style: solid;
   border-right-style: solid;
   border-width: thin;
