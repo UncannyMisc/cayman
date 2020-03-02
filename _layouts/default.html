@@ -38,7 +38,7 @@
 	  {{ page.title | default: site.title | default: site.github.repository_name }}
 	  {% endif %}</h1>
       <h2 class="project-tagline">
-	  {% if page.title and not page.is_main %}
+	  {% if page.title and !page.is_main %}
 	  {{ site.title | page.description | default: site.description | default: site.github.project_tagline }}
 	  {% else %}
 	  {{ page.description | default: site.description | default: site.github.project_tagline }}
