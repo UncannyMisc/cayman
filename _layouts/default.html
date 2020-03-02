@@ -32,11 +32,16 @@
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-		<div class="nav-bar">
+      <h2 class="project-tagline">
+	  {% if page.title %}
+	  {{ site.title | page.description | default: site.description | default: site.github.project_tagline }}
+	  {% else %}
+	  {{ page.description | default: site.description | default: site.github.project_tagline }}
+	  {% endif %}</h2>
+		<div class="site-nav">
 			<div class="inner">
 			  <a href="https://uncannymisc.github.io" class="link"><span>Home</span></a>
-			  <a href="{{ site.github.repository_url }}" class="link"><span>About</span></a>
+			  <a href="https://uncannymisc.github.io/about.html" class="link"><span>About</span></a>
 			  <a href="{{ site.github.repository_url }}" class="link"><span>Portfolio</span></a>
 			  <a href="https://uncannymisc.github.io/articles/" class="link"><span>Articles</span></a>
 			  <a href="https://uncannymisc.github.io/tutorials/" class="link"><span>Tutorials</span></a>
