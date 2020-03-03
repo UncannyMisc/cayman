@@ -32,6 +32,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
+  background-color: whitesmoke;
 }
 
 #skip-to-content {
@@ -171,25 +172,29 @@ a {
 
 .main-content {
   word-wrap: break-word;
+  background-color: white;
 
   :first-child {
     margin-top: 0;
   }
 
   @include large {
-    max-width: 64rem;
-    padding: 2rem 6rem;
+    max-width: 52rem;
+    padding: 1rem 2rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
 
   @include medium {
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
     font-size: 1.1rem;
+	
+    max-width: 52rem;
+    margin: 0 auto;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 1rem 2rem;
     font-size: 1rem;
   }
   
@@ -361,9 +366,12 @@ a {
 }
 
 .site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    border-top: solid 2px #000000;
+    background: url(../images/pattern.png);
+    background-position: center;
 
   @include large {
     font-size: 1rem;
@@ -384,7 +392,8 @@ a {
 }
 
 .site-footer-credits {
-  color: $blockquote-text-color;
+  /*color: $blockquote-text-color;*/
+  color: #ffffff;
 }
 
 
@@ -475,7 +484,7 @@ nav {
   /*width: max-content;*/
   max-width: fit-content;
   border-left-style: solid;
-  border-right-style: solid;
+  /*border-right-style: solid;*/
   border-width: thin;
 }
 
@@ -543,7 +552,7 @@ nav {
   padding-right: 35px;
   padding-left: 35px;
   border-right-style: solid;
-  border-left-style: solid;
+  /*border-left-style: solid;*/
   border-width: thin;
   display: block;
   float: left;
