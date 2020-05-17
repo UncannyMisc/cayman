@@ -186,6 +186,7 @@ main {
 .main-content {
   word-wrap: break-word;
   background-color: white;
+  flex-grow: 1;
 
   :first-child {
     margin-top: 0;
@@ -385,7 +386,6 @@ main {
     border-top: solid 2px #000000;
     background: url(../images/pattern.png);
     background-position: center;
-	flex-grow: 1;
 
   @include large {
     font-size: 1rem;
