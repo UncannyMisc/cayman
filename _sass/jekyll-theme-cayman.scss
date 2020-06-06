@@ -116,7 +116,7 @@ a {
 .page-header {
   color: $header-heading-color;
   text-align: center;
-  background-image: url(../images/bannermedium.png);
+  /*background-image: url(../images/bannermedium.png);*/
   background-size: cover;
 
   @include large {

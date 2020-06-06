@@ -30,7 +30,11 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
+	{% if page.post_image %}
+    <header class="page-header" role="banner" style="background-image: url({{page.post_image}});">
+	{% else %}
+    <header class="page-header" role="banner" style="background-image: url(../images/bannermedium.png);">
+	{% endif %}
       <h1 class="project-name">
 	  {% if page.is_main %}
 		{{ site.name | default: site.title | default: site.github.repository_name }}
