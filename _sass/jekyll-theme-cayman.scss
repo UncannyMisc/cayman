@@ -379,6 +379,21 @@ main {
   }
 }
 
+.grid-item div a div {
+	width: 70%;
+    object-fit: cover;
+    height: 120px;
+	
+    background-color: white;
+    background-size: cover;
+    background-position-y: center;
+    background-blend-mode: multiply;
+	transition: background-color 2s;
+}
+.grid-item div a div:hover {
+	background-color: darkgrey;
+}
+
 .site-footer {
     padding-top: 4rem;
     padding-bottom: 4rem;
