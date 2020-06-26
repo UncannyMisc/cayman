@@ -386,7 +386,7 @@ main {
     text-align: center;
 	
     background-color: white;
-    color: white;
+    color: transparent;
     background-size: cover;
     background-position-y: center;
     background-blend-mode: multiply;
@@ -395,7 +395,7 @@ main {
 }
 .grid-item div a div:hover {
 	background-color: #585858;
-	color:transparent;
+	color:white;
 }
 .grid-item div div p {
 	margin-bottom: 0;
