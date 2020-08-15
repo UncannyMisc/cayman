@@ -200,11 +200,11 @@ main {
   }
 
   @include medium {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-	
     width: 52rem;
+    padding: 1rem 2rem;
+	
     margin: 0 auto;
+    font-size: 1.1rem;
   }
 
   @include small {
@@ -405,7 +405,6 @@ main {
     padding-top: 4rem;
     padding-bottom: 4rem;
     padding-left: 3rem;
-    border-top: solid 2px #000000;
     background: url(../images/pattern.png);
     background-position: center;
 
